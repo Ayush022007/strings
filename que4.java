@@ -1,0 +1,17 @@
+package strings;
+
+public class que4 {
+    public static String subString(String fruits[]){
+        String large = fruits[0];
+        for (int i = 1;i<fruits.length;i++){
+            if(large.compareTo(fruits[i])<0){
+                large = fruits[i];
+            }
+        }
+        return large;
+    }
+    public static void main(String[] args) {
+        String fruits[]={"apple","mango","banana"};
+        System.out.println(subString(fruits));
+    }
+}
